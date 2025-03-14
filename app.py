@@ -16,6 +16,7 @@ import numpy as np
 import pickle as pkl
 import tensorflow as tf
 from tensorflow.keras.applications.resnet50 import preprocess_input
+from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.preprocessing import image
 from PIL import Image as PILImage
 from sklearn.neighbors import NearestNeighbors
