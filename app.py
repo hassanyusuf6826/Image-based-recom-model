@@ -41,6 +41,7 @@ neighbors = NearestNeighbors(n_neighbors=5, algorithm='brute', metric='euclidean
 neighbors.fit(image_features)
 
 def extract_features(img):
+    img = img.convert('RGB')
     img = img.resize((224, 224))
     img_array = image.img_to_array(img)
     img_expand_dim = np.expand_dims(img_array, axis=0)
