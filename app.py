@@ -22,8 +22,8 @@ from sklearn.neighbors import NearestNeighbors
 from numpy.linalg import norm
 
 # Load saved features and filenames
-image_features_path = "/content/drive/MyDrive/Images_features.pkl"
-filenames_path = "/content/drive/MyDrive/filenames.pkl"
+image_features_path = "Images_features.pkl"
+filenames_path = "filenames.pkl"
 
 with open(image_features_path, "rb") as f:
     image_features = pkl.load(f)
