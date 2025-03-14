@@ -18,6 +18,7 @@ import tensorflow as tf
 from tensorflow.keras.applications.resnet50 import preprocess_input
 from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.preprocessing import image
+from keras.preprocessing.image import img_to_array
 from PIL import Image as PILImage
 from sklearn.neighbors import NearestNeighbors
 from numpy.linalg import norm
