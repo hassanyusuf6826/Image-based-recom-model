@@ -93,7 +93,7 @@ model = tf.keras.applications.ResNet50(weights='imagenet', include_top=False, in
 model = tf.keras.models.Sequential([model, tf.keras.layers.GlobalMaxPool2D()])
 
 # Build Nearest Neighbors Model
-neighbors = NearestNeighbors(n_neighbors=5, algorithm='brute', metric='euclidean')
+neighbors = NearestNeighbors(n_neighbors=5, algorithm='brute', metric='cosine')
 neighbors.fit(image_features)
 
 # Feature Extraction Function
