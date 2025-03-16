@@ -110,7 +110,7 @@ def recommend_similar_images(uploaded_img):
     distances, indices = neighbors.kneighbors([feature_vector])
     
     # Load recommended images from local 'images/' directory
-    recommended_images = [os.path.join("images", os.path.basename(filenames[i])) for i in indices[0]]
+    recommended_images = [os.path.join("ecommerce", os.path.basename(filenames[i])) for i in indices[0]]
     
     return recommended_images
 
