@@ -91,6 +91,16 @@ model = tf.keras.models.Sequential([model, tf.keras.layers.GlobalMaxPool2D()])
 neighbors = NearestNeighbors(n_neighbors=5, algorithm='brute', metric='cosine')
 neighbors.fit(image_features)
 
+# Feature Extraction Function
+def feature_extraction(img_path, model):
+    img = load_img(img_path, target_size=(224, 224))  # Load image correctly
+    img_array = img_to_array(img)  # Convert to array
+    expanded_img_array = np.expand_dims(img_array, axis=0)  # Expand dimensions
+    preprocessed_img = preprocess_input(expanded_img_array)  # Preprocess image
+    result = model.predict(preprocessed_img).flatten()  # Extract features
+    normalized_result = result / norm(result)  # Normalize feature vector
+    return normalized_result
+
 # Update recommend function
 def recommend_similar_images(uploaded_img):
     temp_path = "temp_uploaded_image.jpg"
