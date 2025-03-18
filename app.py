@@ -130,6 +130,7 @@ st.markdown(
         background-image: url("https://github.com/hassanyusuf6826/Image-based-recom-model/blob/main/zummit.jpeg");
         background-size: cover;
         background-position: center;
+        background-attachment: fixed;
     }}
     </style>
     """,
