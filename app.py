@@ -64,6 +64,10 @@ st.sidebar.write("### Designed by:")
 st.sidebar.write("#### Yusuf Hassan")
 st.sidebar.write("#### Artificial Intelligence and Machine Learning Intern")
 st.sidebar.write("#### Zummit Africa")
+st.sidebar.write("### SUPERVISOR:")
+st.sidebar.write("#### Mr. John Dominion")
+st.sidebar.write("#### AI/ML Engineer")
+st.sidebar.write("#### Zummit Africa")
 
 
 st.title("🛍️ Fashion Recommendation System")
