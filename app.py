@@ -60,8 +60,10 @@ st.markdown(
 )
 
 st.sidebar.title("Fashion Recommendation System")
-st.sidebar.info("Upload an image to find visually similar fashion items.")
 st.sidebar.image("zummit.jpeg", caption="Zummit Africa")
+st.sidebar.info("Upload an image to find visually similar fashion items.")
+st.sidebar.write("### Designed by:")
+
 
 st.title("🛍️ Fashion Recommendation System")
 st.write("### Discover Similar Fashion Items Instantly!")
