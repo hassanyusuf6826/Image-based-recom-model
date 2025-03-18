@@ -144,7 +144,7 @@ st.write("### Discover Similar Fashion Items Instantly!")
 uploaded_file = st.file_uploader("Choose an image", type=["jpg", "png", "jpeg"])
 if uploaded_file:
     image = Image.open(uploaded_file)
-    st.image(image, caption="Uploaded Image", use_column_width=True)
+    st.image(image, caption="Uploaded Image", use_container_width=True)
     
     with st.spinner("Finding recommendations..."):
         recommendations = recommend_similar_images(image)
