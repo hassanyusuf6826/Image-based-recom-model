@@ -123,17 +123,17 @@ def recommend_similar_images(uploaded_img):
 
 # Streamlit UI Enhancements
 st.set_page_config(page_title="Fashion Recommendation System", layout="wide")
-st.markdown(
-    """
-    <style>
-        .reportview-container {background: url(https://github.com/hassanyusuf6826/Image-based-recom-model/blob/main/zummit.jpeg) no-repeat center center fixed; background-size: cover;}
-        .stButton>button {border-radius: 12px; background-color: #4CAF50; color: white;}
-        .stImage>img {border-radius: 10px;}
-        .sidebar .sidebar-content {background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px;}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+# st.markdown(
+#     """
+#     <style>
+#         .reportview-container {background: url(https://github.com/hassanyusuf6826/Image-based-recom-model/blob/main/zummit.jpeg) no-repeat center center fixed; background-size: cover;}
+#         .stButton>button {border-radius: 12px; background-color: #4CAF50; color: white;}
+#         .stImage>img {border-radius: 10px;}
+#         .sidebar .sidebar-content {background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px;}
+#     </style>
+#     """,
+#     unsafe_allow_html=True
+# )
 
 st.sidebar.title("Fashion Recommendation System")
 st.sidebar.info("Upload an image to find visually similar fashion items.")
