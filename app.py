@@ -123,6 +123,19 @@ def recommend_similar_images(uploaded_img):
 
 # Streamlit UI Enhancements
 st.set_page_config(page_title="Fashion Recommendation System", layout="wide")
+st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url("https://github.com/hassanyusuf6826/Image-based-recom-model/blob/main/zummit.jpeg");
+        background-size: cover;
+        background-position: center;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 # st.markdown(
 #     """
 #     <style>
