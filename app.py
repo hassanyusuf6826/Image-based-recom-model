@@ -41,7 +41,6 @@ def recommend_similar_images(uploaded_img):
     _, indices = neighbors.kneighbors([feature_vector])
     recommended_images = [os.path.join("ecommerce", os.path.basename(filenames[i])) for i in indices[0]]
     return recommended_images
-    # 'https://source.unsplash.com/1600x900/?fashion,shopping'
 
 # Streamlit UI Enhancements
 st.set_page_config(page_title="Fashion Recommendation System", layout="wide")
@@ -61,7 +60,6 @@ st.markdown(
 
 st.sidebar.title("Fashion Recommendation System")
 st.sidebar.image("zummit.jpeg", caption="Zummit Africa")
-st.sidebar.info("Upload an image to find visually similar fashion items.")
 st.sidebar.write("### Designed by:")
 st.sidebar.write("#### Yusuf Hassan")
 st.sidebar.write("#### Artificial Intelligence and Machine Learning Intern")
