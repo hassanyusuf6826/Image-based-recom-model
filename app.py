@@ -153,7 +153,7 @@ if uploaded_file:
     cols = st.columns(len(recommendations))
     for col, img_path in zip(cols, recommendations):
         if os.path.exists(img_path):
-            col.image(img_path, use_column_width=True)
+            col.image(img_path, use_container_width=True)
         else:
             col.warning(f"Image {img_path} not found.")
 
