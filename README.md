@@ -22,7 +22,7 @@ The **Fashion Recommendation System** is an AI-powered tool that helps users fin
 ## 🔧 Installation
 ### **1️⃣ Clone the Repository**
 ```sh
- git clone https://github.com/YusufHassan/Fashion-Recommendation-System.git
+ git clone https://github.com/hassanyusuf6826/Image-based-recom-model.git
  cd Fashion-Recommendation-System
 ```
 
