@@ -62,12 +62,12 @@ st.sidebar.title("Fashion Recommendation System")
 st.sidebar.image("zummit.jpeg", caption="Zummit Africa")
 st.sidebar.write("### Designed by:")
 st.sidebar.write("#### Yusuf Hassan")
-st.sidebar.write("#### AI/ML Intern")
-st.sidebar.write("#### Zummit Africa")
+st.sidebar.write("##### AI/ML Intern")
+
 st.sidebar.write("### SUPERVISOR:")
 st.sidebar.write("#### Mr. John Dominion")
-st.sidebar.write("#### AI/ML Engineer")
-st.sidebar.write("#### Zummit Africa")
+st.sidebar.write("##### AI/ML Engineer")
+
 
 
 st.title("🛍️ Fashion Recommendation System")
